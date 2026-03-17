@@ -1,0 +1,18 @@
+[project]
+name = "enumsync"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [{ name = "elda27", email = "kaz.birdstick@gmail.com" }]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+enumsync = "enumsync:main"
+
+[build-system]
+requires = ["uv_build>=0.9.25,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = ["jinja2>=3.1.6", "pytest>=9.0.2", "ruff>=0.15.6", "ty>=0.0.23"]

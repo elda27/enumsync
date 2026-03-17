@@ -1,8 +1,9 @@
 [project]
 name = "enumsync"
 version = "0.1.0"
-description = "Add your description here"
+description = "Generate typed enum modules from files in a folder"
 readme = "README.md"
+license = { file = "LICENSE" }
 authors = [{ name = "elda27", email = "kaz.birdstick@gmail.com" }]
 requires-python = ">=3.14"
 dependencies = []

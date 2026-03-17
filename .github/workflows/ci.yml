@@ -35,21 +35,21 @@ jobs:
           version: "latest"
 
       - name: Install dependencies
-        working-directory: axion_lab
+        working-directory: enumsync
         run: |
           uv sync --frozen --all-extras
 
       - name: Run linting
-        working-directory: axion_lab
+        working-directory: enumsync
         run: |
           uv run ruff check src/
 
       - name: Run type checking
-        working-directory: axion_lab
+        working-directory: enumsync
         run: |
           uv run ty check src/
 
       - name: Run tests
-        working-directory: axion_lab
+        working-directory: enumsync
         run: |
           uv run pytest tests/ -v --cov=src
